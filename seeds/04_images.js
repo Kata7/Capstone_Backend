@@ -1,10 +1,12 @@
 
 exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
+  const tableName = images
+  return knex(tableName).del()
     .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
+      return knex(tableName).insert([
+      // id (int)
+      // restaurant_id (int)
+      // url (text)
         {id: 1, colName: 'rowValue1'},
         {id: 2, colName: 'rowValue2'},
         {id: 3, colName: 'rowValue3'}

@@ -10,7 +10,19 @@ const knex = require('knex')(config)
 const port = 8000
 
 app.get('/', function(req, res, next){
-     res.send('hello world')
+  res.send('get')
+})
+
+app.post('/', function(req, res, next) {
+  res.send('post')
+})
+
+app.patch('/', function(req, res, next) {
+  res.send('patch')
+})
+
+app.delete('/', function(req, res, next) {
+  res.send('delete')
 })
 
 app.listen(port, function() {
