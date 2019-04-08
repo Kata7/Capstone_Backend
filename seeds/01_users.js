@@ -1,4 +1,3 @@
-
 exports.seed = function(knex, Promise) {
 const tableName = 'users'
   return knex(tableName).del()
@@ -12,9 +11,16 @@ const tableName = 'users'
         // geo_lat (decimal)
         // geo_long (decimal)
         // distance (integer)
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {
+          id: 1,
+          username: 'swag',
+          address: '1165 Revere Point Road',
+          city: 'Virginia Beach',
+          state: 'Virginia',
+          geo_lat: 69,
+          geo_long: 420,
+          distance: 10
+        }
       ]);
     });
 };

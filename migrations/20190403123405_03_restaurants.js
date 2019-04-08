@@ -20,6 +20,7 @@ exports.up = function(knex, Promise) {
     table.text('url').notNullable();
     table.integer('price_rank').notNullable();
     table.text('description').notNullable();
+    table.text('image').notNullable();
   })
   
 };
