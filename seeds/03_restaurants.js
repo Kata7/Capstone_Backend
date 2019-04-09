@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
           price_rank: 2,
           description: "Venerable casual destination for basic beef cuts & burgers cooked on a flattop & wood-fired grill.",
           image: "http://chowpapi.com/wp-content/uploads/2017/08/DSC04201.jpg"
-        },
+        }
       ]);
     });
 };
